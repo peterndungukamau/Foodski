@@ -1,0 +1,13 @@
+.card-body{
+text-align:center;
+}
+.card-body>img{
+    width:100%;
+    height:250px;
+}
+.card-footer>p{
+    color:black;
+}
+a:hover{
+    text-decoration: none;
+}
