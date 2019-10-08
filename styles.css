@@ -1,0 +1,45 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333; */
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: transparent;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover{
+      background-color: black;
+      text-decoration:none;color: white;
+
+    /* background-color: #111; */
+  }
+  nav{
+      /* position: fixed; */
+      padding:px;
+  }
+
+  .confuse{
+      padding: 2.5%;
+      color:transparent;
+  }
+
+  .card{
+      width: 400px;
+      margin-top:40px;
+      display: flex;
+/* background-color: red; */
+  }
+
