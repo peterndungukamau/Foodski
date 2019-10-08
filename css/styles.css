@@ -3,7 +3,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-body {
+#auth {
   font-family: "Lato", sans-serif;
   background: #6a9113; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -30,6 +30,7 @@ body {
 }
 #register h3 {
   text-transform: uppercase;
+  text-decoration: underline;
 }
 #register input {
   height: 42px;
