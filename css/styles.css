@@ -5,14 +5,30 @@
 }
 body {
   font-family: "Lato", sans-serif;
+  background: #6a9113; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #141517,
+    #6a9113
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #141517,
+    #6a9113
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 #register {
   margin: auto;
   padding: 15px;
   margin-top: 50px;
   text-align: center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
-#register h2 {
+#register h3 {
   text-transform: uppercase;
 }
 #register input {
