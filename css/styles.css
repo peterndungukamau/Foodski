@@ -2,9 +2,9 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Lato", sans-serif;
 }
 #auth {
-  font-family: "Lato", sans-serif;
   background: #6a9113; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -47,15 +47,37 @@
 }
 
 /* Homepage styles start */
-.nav{
-  background-color:transparent;
-  height:auto;
+.logo img{
+  height: 100px;
+  padding-top: 10px;
 }
 
-.nav ul > li{
-  display: inline-block;
-  padding:30px;
+
+.my-sm-0{
+  margin-left: 5px !important;
 }
 
+#navbarNav{
+  margin-left: 160px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.61);
+  font-size: 18px;
+  padding: 25px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+  color: black;
+}
+/* NB : To be included when we merge our work
+
+@media screen and (max-width: 768px) {
+
+  #navbarNav{
+  margin: 65px !important;
+  }
+  
+}
 /* Homepage styles end */
 
