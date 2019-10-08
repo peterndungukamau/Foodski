@@ -70,6 +70,47 @@
 .navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
   color: black;
 }
+
+.caption{
+  margin: 160px 0px 0px 0px;
+}
+
+
+.caption h1{
+  text-align: center
+}
+
+.caption h2{
+  text-align: center
+}
+
+.caption p{
+  text-align: center
+}
+
+.bg-light {
+  background-color: #f8f9fa!important;
+  width: 100%;
+  position: fixed;
+}
+
+.btn-order{
+  background: #3E9920;
+  width: 12%;
+  color: white;
+}
+
+.btn-order:hover{
+  background: #609c4f;
+}
+
+
+.banner{
+  background-image:url(../images/home-bg.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  height: 600px;
+}
 /* NB : To be included when we merge our work
 
 @media screen and (max-width: 768px) {
