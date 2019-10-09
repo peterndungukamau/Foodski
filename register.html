@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="./images/logo.png" type="image/icon" />
     <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Foodski</title>
@@ -29,34 +30,38 @@
         <h3 class="text-center">Signup</h3>
       </div>
       <div class="card-body">
-        <form>
+        <form id="signup-form">
           <div class="form-group">
             <label for="username">Enter username</label>
             <input
               type="text"
               class="form-control"
               id="username"
+              value=""
               aria-describedby="emailHelp"
               placeholder="Enter username"
+              required
             />
           </div>
           <div class="form-group">
-            <label for="exampleInputEmail1">Enter email</label>
+            <label for="signup-email">Enter email</label>
             <input
               type="email"
               class="form-control"
-              id="exampleInputEmail1"
+              id="signup-email"
               aria-describedby="emailHelp"
               placeholder="Enter email"
+              required
             />
           </div>
           <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
+            <label for="signup-password">Password</label>
             <input
               type="password"
               class="form-control"
-              id="exampleInputPassword1"
+              id="signup-password"
               placeholder="Password"
+              required
             />
           </div>
           <div class="form-group">
@@ -65,7 +70,8 @@
               type="password"
               class="form-control"
               id="exampleInputPassword1"
-              placeholder="Password"
+              placeholder="Confirm password"
+              required
             />
           </div>
           <button type="submit" class="btn btn-success" id="submitbtn">
@@ -96,17 +102,7 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.1.0/firebase-app.js"></script>
 
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.1.0/firebase-analytics.js"></script>
-    <script src="/__/firebase/7.1.0/firebase-auth.js"></script>
-    <script src="/__/firebase/7.1.0/firebase-firestore.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
     <script src="./js/scripts.js"></script>
   </body>
 </html>

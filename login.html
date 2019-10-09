@@ -19,6 +19,7 @@
       href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="./images/logo.png" type="image/icon" />
     <link rel="stylesheet" href="./css/styles.css" />
 
     <title>Foodski</title>
@@ -29,15 +30,16 @@
         <h3 class="text-center">Sign in</h3>
       </div>
       <div class="card-body">
-        <form>
+        <form id="login-form">
           <div class="form-group">
             <label for="exampleInputEmail1">Enter email</label>
             <input
               type="email"
               class="form-control"
-              id="exampleInputEmail1"
+              id="my-email"
               aria-describedby="emailHelp"
               placeholder="Enter email"
+              required
             />
           </div>
           <div class="form-group">
@@ -45,13 +47,14 @@
             <input
               type="password"
               class="form-control"
-              id="exampleInputPassword1"
+              id="my-password"
               placeholder="Password"
+              required
             />
           </div>
 
           <button type="submit" class="btn btn-success" id="submitbtn">
-            Signup
+            Sign in
           </button>
           <p class="pt-2">
             Have no account? <a href="./register.html">Sign up.</a>
@@ -78,6 +81,7 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+
     <script src="./js/scripts.js"></script>
   </body>
 </html>
