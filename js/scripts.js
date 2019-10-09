@@ -37,7 +37,9 @@ $("document").ready(function() {
     });
     if (emailArray.includes(email) && passwordArray.includes(password)) {
       window.location.replace("../hotelsPage.html");
-      alert("Logged in successfull");
+      // alert("Logged in successfull");
+      $("#logout").show();
+      $("#log").hide();
     } else {
       alert("Incorrect email or password");
     }
