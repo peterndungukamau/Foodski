@@ -1,6 +1,10 @@
 * {
   overflow-x: hidden;
 }
+body{
+  font-family: "Lato", sans-serif;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -36,6 +40,7 @@ nav {
 .card {
   margin-top: 40px;
 }
+
 h3 {
   text-align: center;
 }
