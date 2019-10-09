@@ -29,13 +29,13 @@
         <h3 class="text-center">Sign in</h3>
       </div>
       <div class="card-body">
-        <form>
+        <form id="login-form">
           <div class="form-group">
             <label for="exampleInputEmail1">Enter email</label>
             <input
               type="email"
               class="form-control"
-              id="exampleInputEmail1"
+              id="my-email"
               aria-describedby="emailHelp"
               placeholder="Enter email"
             />
@@ -45,13 +45,13 @@
             <input
               type="password"
               class="form-control"
-              id="exampleInputPassword1"
+              id="my-password"
               placeholder="Password"
             />
           </div>
 
           <button type="submit" class="btn btn-success" id="submitbtn">
-            Signup
+            Sign in
           </button>
           <p class="pt-2">
             Have no account? <a href="./register.html">Sign up.</a>
@@ -78,6 +78,7 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-    <script src="./js/scripts.js"></script>
+
+    <script src="./js/auth.js"></script>
   </body>
 </html>
