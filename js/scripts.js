@@ -21,6 +21,7 @@ $("document").ready(function() {
     existingUsers.push(user);
     localStorage.setItem("allEntries", JSON.stringify(existingUsers));
     this.reset();
+    window.location.replace("../login.html");
   });
   //sign in
   $("#login-form").submit(function(event) {
@@ -35,6 +36,7 @@ $("document").ready(function() {
       passwordArray.push(user.password);
     });
     if (emailArray.includes(email) && passwordArray.includes(password)) {
+      window.location.replace("../hotelsPage.html");
       alert("Logged in successfull");
     } else {
       alert("Incorrect email or password");
