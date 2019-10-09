@@ -64,6 +64,7 @@
   color: rgba(0, 0, 0, 0.61);
   font-size: 18px;
   padding: 5px 25px 5px 25px;
+  text-transform: uppercase;
 }
 
 .navbar-light .navbar-nav .active > .nav-link,
@@ -138,6 +139,36 @@
 }
 #logout {
   display: none;
+}
+footer {
+  height: 70vh;
+  background-color: #000000;
+  margin-top: 30px;
+  color: #fff;
+  padding: 40px 0 0 60px;
+}
+footer span {
+  color: #3e9920;
+}
+footer h1 {
+  margin-bottom: 50px;
+}
+footer li {
+  color: #fff;
+  list-style: none;
+}
+footer a {
+  color: #fff;
+}
+#horizontal {
+  border-bottom: 1px solid #fff;
+  padding-top: 50px;
+}
+#copyright {
+  padding-top: 30px;
+}
+footer i {
+  font-size: 30px;
 }
 
 /* NB : To be included when we merge our work
