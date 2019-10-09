@@ -3,6 +3,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
+  overflow-x: hidden;
 }
 #auth {
   background: #6a9113; /* fallback for old browsers */
@@ -97,6 +98,7 @@
   background-color: #f8f9fa !important;
   width: 100%;
   position: fixed;
+  z-index:999999;
 }
 
 .btn-order {
@@ -111,6 +113,15 @@
   background: #609c4f;
 }
 
+.btn-orderr {
+  background: #3e9920;
+  color: white;
+}
+
+.btn-orderr:hover {
+  background: #609c4f;
+}
+
 .banner {
   background-image: url(../images/home-bg.jpg);
   background-repeat: no-repeat;
@@ -118,26 +129,46 @@
   height: 600px;
 }
 
-.carousel-item h5 {
-  color: black;
+
+.about h1{
+  padding-top: 15%;
 }
 
-.carousel-item p {
-  color: black;
+.testimonial h1{
+  padding-top: 15%;
+  text-align: center;
 }
 
-.d-block img {
-  width: 100%;
+
+.testimonial h4{
+  text-align: center;
+}
+
+
+.testimonial h6{
+  text-align: center;
+}
+
+.testimonial p{
+  text-align: center;
 }
 
 .spacer {
   margin: 5%;
 }
+
+
 #log {
   padding-right: 20px;
 }
+
+
 #logout {
   display: none;
+}
+
+.ml-auto, .mx-auto {
+  margin-left: 35%!important;
 }
 
 /* NB : To be included when we merge our work
