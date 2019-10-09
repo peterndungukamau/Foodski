@@ -16,6 +16,10 @@
       crossorigin="anonymous"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
       rel="stylesheet"
     />
@@ -36,9 +40,9 @@
     </nav> -->
     <!-- <div class="confuse"></div> -->
     <div id="lunch">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="card">
               <div class="card-body">
                 <img
@@ -52,12 +56,18 @@
                 <span class="item-name">Ugali and omena</span>
                 <div class="item-details">
                   <p class="item-price">Kshs. 65.00</p>
-                  <div class="btn-success btn">Order</div>
+                  <div
+                    class="btn-success btn"
+                    data-toggle="modal"
+                    data-target="#exampleModalCenter"
+                  >
+                    Order
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="card">
               <div class="card-body">
                 <img
@@ -76,18 +86,18 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-4">
             <div class="card">
               <div class="card-body">
                 <img
-                  src="https://www.pikachakula.com/wp-content/uploads/2018/03/Sausage-curry-with-Toasted-Coconut-Rice-003-394x252.jpg"
+                  src="https://www.pikachakula.com/wp-content/uploads/2018/02/Beef-Stew-Ugali-017.jpg"
                   height="250px"
                   alt=""
                   class="container-fluid"
                 />
               </div>
               <div class="card-footer text-center">
-                <span class="item-name">Beef-Stew-rice</span>
+                <span class="item-name">Ugali-beef</span>
                 <div class="item-details">
                   <p class="item-price">Kshs. 115.00</p>
                   <div class="btn-success btn">Order</div>
@@ -95,27 +105,9 @@
               </div>
             </div>
           </div>
-          <div class="col-md-3">
-            <div class="card">
-              <div class="card-body">
-                <img
-                  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1s9gx1036_M3_KDbkjxDe5QfUmkYy8kmpYCPs2PuxjgEgPp7tMQ"
-                  height="250px"
-                  alt=""
-                  class="container-fluid"
-                />
-              </div>
-              <div class="card-footer text-center">
-                <span class="item-name">kachumbari</span>
-                <div class="item-details">
-                  <p class="item-price">Kshs. 15.00</p>
-                  <div class="btn-success btn">Order</div>
-                </div>
-              </div>
-            </div>
-          </div>
+
           <div class="row">
-            <div class="col-md-3">
+            <div class="col-md-4">
               <div class="card">
                 <div class="card-body">
                   <img
@@ -134,7 +126,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
               <div class="card">
                 <div class="card-body">
                   <img
@@ -153,7 +145,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-4">
               <div class="card">
                 <div class="card-body">
                   <img
@@ -172,25 +164,57 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-3">
-              <div class="card">
-                <div class="card-body">
-                  <img
-                    src="https://www.pikachakula.com/wp-content/uploads/2018/02/Beef-Stew-Ugali-017.jpg"
-                    height="250px"
-                    alt=""
-                    class="container-fluid"
-                  />
-                </div>
-                <div class="card-footer text-center">
-                  <span class="item-name">Ugali-beef</span>
-                  <div class="item-details">
-                    <p class="item-price">Kshs. 65.00</p>
-                    <div class="btn">Order</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- food 1 -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header food-header">
+            <h5 class="modal-title " id="exampleModalCenterTitle">
+              Ugali and Omena
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <center>
+              <img
+                src="http://sembe.co.ke/images/new_resource/omena.jpg"
+                height="150px"
+                alt=""
+              />
+            </center>
+          </div>
+          <div class="modal-footer">
+            <button class="btn change-cart"><i class="fa fa-minus"></i></button>
+            <p>1</p>
+            <button class="btn change-cart mr-4">
+              <i class="fa fa-plus"></i>
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary align-right"
+              id="orderbtn"
+            >
+              Add to cart
+            </button>
           </div>
         </div>
       </div>
