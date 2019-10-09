@@ -43,7 +43,9 @@ h3 {
   text-align: center;
 }
 .btn {
-  width: 100%;
+  width: 40%;
+  color:white;
+  background-color: green;
 }
 .food-header {
   margin-left: 150px;
