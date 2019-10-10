@@ -16,34 +16,88 @@ $("document").ready(function() {
   var quantity5 = parseInt($("#quantity5").text());
   var quantity6 = parseInt($("#quantity6").text());
   var quantity4 = parseInt($("#quantity4").text());
-  
-  
-  //increment
-  $("#add, #add2,add3,#add5,#add6,#add4").click(function() {
-    quantity += 1;
-    $("#quantity, #quantity2 ,#quantity3,#quantity5,#quantity6,#quantity4").text(quantity);
-    $("#price").text(quantity * 100);
-    $("#price2").text(quantity * 150);
-    $("#price3").text(quantity * 200);
-    $("#price5").text(quantity * 150);
-    $("#price4").text(quantity * 80);
 
-    $("#price6").text(quantity * 50)
+  //increment
+  $("#add").click(function() {
+    quantity += 1;
+    $("#quantity").text(quantity);
+    $("#price").text(quantity * 65);
+  });
+  $("#add2").click(function() {
+    quantity2 += 1;
+    $("#quantity2").text(quantity2);
+    $("#price2").text(quantity2 * 65);
+  });
+  $("#add3").click(function() {
+    quantity3 += 1;
+    $("#quantity3").text(quantity3);
+    $("#price3").text(quantity3 * 115);
+  });
+  $("#add4").click(function() {
+    quantity4 += 1;
+    $("#quantity4").text(quantity4);
+    $("#price4").text(quantity4 * 125);
+  });
+  $("#add5").click(function() {
+    quantity5 += 1;
+    $("#quantity5").text(quantity5);
+    $("#price5").text(quantity5 * 65);
+  });
+  $("#add6").click(function() {
+    quantity6 += 1;
+    $("#quantity6").text(quantity6);
+    $("#price6").text(quantity6 * 65);
   });
   //decrement
-  $("#subtract, #subtract2 ,#subtract3 ,#subtract5,#subtract6,#subtract4").click(function() {
+  $("#subtract").click(function() {
     quantity -= 1;
     if (quantity < 1) {
       return (quantity = 1);
     }
-    $("#quantity, #quantity2, #quantity3 ,#quantity5 ,#quantity4,#quantity6").text(quantity);
-    $("#price").text(quantity * 100);
-    $("#price2").text(quantity * 150);
-    $("#price3").text(quantity * 200);
-    $("#price5").text(quantity * 150);
-    $("#price6").text(quantity * 50);
-    $("#price4").text(quantity * 80);
+    $("#quantity").text(quantity);
+    $("#price").text(quantity * 65);
   });
+  $("#subtract2").click(function() {
+    quantity2 -= 1;
+    if (quantity2 < 1) {
+      return (quantity2 = 1);
+    }
+    $("#quantity2").text(quantity2);
+    $("#price2").text(quantity2 * 65);
+  });
+  $("#subtract3").click(function() {
+    quantity3 -= 1;
+    if (quantity3 < 1) {
+      return (quantity3 = 1);
+    }
+    $("#quantity3").text(quantity3);
+    $("#price3").text(quantity3 * 115);
+  });
+  $("#subtract4").click(function() {
+    quantity4 -= 1;
+    if (quantity4 < 1) {
+      return (quantity4 = 1);
+    }
+    $("#quantity4").text(quantity4);
+    $("#price4").text(quantity4 * 125);
+  });
+  $("#subtract5").click(function() {
+    quantity5 -= 1;
+    if (quantity5 < 1) {
+      return (quantity5 = 1);
+    }
+    $("#quantity5").text(quantity5);
+    $("#price5").text(quantity5 * 65);
+  });
+  $("#subtract6").click(function() {
+    quantity6 -= 1;
+    if (quantity6 < 1) {
+      return (quantity6 = 1);
+    }
+    $("#quantity6").text(quantity6);
+    $("#price6").text(quantity6 * 65);
+  });
+
   //Add to cart
   $("#orderbtn, .githe1, .githe2, .githe3, .githe4, .githe5, .githe6").click(
     function() {
