@@ -14,7 +14,7 @@ $("document").ready(function() {
   var quantity2 = parseInt($("#quantity2").text());
   var quantity3 = parseInt($("#quantity3").text());
   //increment
-  $("#add, #add2,add3").click(function() {
+  $("#add, #add2,#add3").click(function() {
     quantity += 1;
     $("#quantity, #quantity2 ,#quantity3").text(quantity);
     $("#price").text(quantity * 100);
