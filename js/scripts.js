@@ -19,7 +19,7 @@ $("document").ready(function() {
   
   
   //increment
-  $("#add, #add2,add3,#add5,#add6,#add4").click(function() {
+  $("#add, #add2,#add3,#add5,#add6,#add4").click(function() {
     quantity += 1;
     $("#quantity, #quantity2 ,#quantity3,#quantity5,#quantity6,#quantity4").text(quantity);
     $("#price").text(quantity * 100);
