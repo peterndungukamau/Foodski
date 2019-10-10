@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
-body{
+body {
   font-family: "Lato", sans-serif;
 }
 
@@ -49,14 +49,14 @@ h3 {
 }
 .btn {
   width: 40%;
-  color:white;
+  color: white;
   background-color: green;
 }
 .food-header {
   margin-left: 150px;
 }
 #orderbtn {
-  width: 40%;
+  width: 30%;
   margin-left: 70px;
 }
 .change-cart {
@@ -70,3 +70,5 @@ h3 {
 .modal-footer p {
   padding: 0 20px 0 20px;
 }
+
+
