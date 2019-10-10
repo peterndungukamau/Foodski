@@ -14,6 +14,7 @@ $("document").ready(function() {
   var quantity2 = parseInt($("#quantity2").text());
   var quantity3 = parseInt($("#quantity3").text());
   var quantity6 = parseInt($("#quantity6").text());
+  // var quantity9 = parseInt($("#quantity9").text());
   //increment
   $("#add, #add2,add3,#add6").click(function() {
     quantity += 1;
@@ -22,6 +23,7 @@ $("document").ready(function() {
     $("#price2").text(quantity * 150);
     $("#price3").text(quantity * 200);
     $("#price6").text(quantity * 50);
+    // $("#price9").text(quantity * 115);
   });
   //decrement
   $("#subtract, #subtract2 ,#subtract3,#subtract6").click(function() {
@@ -34,6 +36,7 @@ $("document").ready(function() {
     $("#price2").text(quantity * 150);
     $("#price3").text(quantity * 200);
     $("#price6").text(quantity * 50);
+    // $("#price9").text(quantity * 115);
   });
   //Add to cart
   $("#orderbtn, .githe1, .githe2, .githe3, .githe4, .githe5, .githe6").click(
