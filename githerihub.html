@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+`<!DOCTYPE html>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -135,18 +135,18 @@
                 />
               </div>
               <div class="card-footer text-center">
-                    <span class="item-name">Mokimo</span>
-                    <div class="item-details">
-                      <p class="item-price">Kshs. 150.00</p>
-                      <div
-                        class="btn-success btn"
-                        data-toggle="modal"
-                        data-target="#exampleModalCenterr"
-                      >
-                        Order
-                      </div>
-                    </div>
+                <span class="item-name">Mokimo</span>
+                <div class="item-details">
+                  <p class="item-price">Kshs. 150.00</p>
+                  <div
+                    class="btn-success btn"
+                    data-toggle="modal"
+                    data-target="#exampleModalCenterr"
+                  >
+                    Order
                   </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-md-4">
@@ -160,18 +160,18 @@
                 />
               </div>
               <div class="card-footer text-center">
-                    <span class="item-name">Chicken/Kuku</span>
-                    <div class="item-details">
-                      <p class="item-price">Kshs. 200.00</p>
-                      <div
-                        class="btn-success btn"
-                        data-toggle="modal"
-                        data-target="#exampleModalCenterrr"
-                      >
-                        Order
-                      </div>
-                    </div>
+                <span class="item-name">Chicken/Kuku</span>
+                <div class="item-details">
+                  <p class="item-price">Kshs. 200.00</p>
+                  <div
+                    class="btn-success btn"
+                    data-toggle="modal"
+                    data-target="#exampleModalCenterrr"
+                  >
+                    Order
                   </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="row">
@@ -186,18 +186,18 @@
                   />
                 </div>
                 <div class="card-footer text-center">
-                        <span class="item-name">Chips</span>
-                        <div class="item-details">
-                          <p class="item-price">Kshs. 80.00</p>
-                          <div
-                            class="btn-success btn"
-                            data-toggle="modal"
-                            data-target="#exampleModalCenterrrr"
-                          >
-                            Order
-                          </div>
-                        </div>
-                      </div>
+                  <span class="item-name">Chips</span>
+                  <div class="item-details">
+                    <p class="item-price">Kshs. 80.00</p>
+                    <div
+                      class="btn-success btn"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenterrrr"
+                    >
+                      Order
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-md-4">
@@ -211,18 +211,18 @@
                   />
                 </div>
                 <div class="card-footer text-center">
-                        <span class="item-name">spaghetti</span>
-                        <div class="item-details">
-                          <p class="item-price">Kshs. 150.00</p>
-                          <div
-                            class="btn-success btn"
-                            data-toggle="modal"
-                            data-target="#exampleModalCenterrrrr"
-                          >
-                            Order
-                          </div>
-                        </div>
-                      </div>
+                  <span class="item-name">spaghetti</span>
+                  <div class="item-details">
+                    <p class="item-price">Kshs. 150.00</p>
+                    <div
+                      class="btn-success btn"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenterrrrr"
+                    >
+                      Order
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-md-4">
@@ -236,18 +236,18 @@
                   />
                 </div>
                 <div class="card-footer text-center">
-                        <span class="item-name">sausage</span>
-                        <div class="item-details">
-                          <p class="item-price">Kshs. 50.00</p>
-                          <div
-                            class="btn-success btn"
-                            data-toggle="modal"
-                            data-target="#exampleModalCenterrrrrr"
-                          >
-                            Order
-                          </div>
-                        </div>
-                      </div>
+                  <span class="item-name">sausage</span>
+                  <div class="item-details">
+                    <p class="item-price">Kshs. 50.00</p>
+                    <div
+                      class="btn-success btn"
+                      data-toggle="modal"
+                      data-target="#exampleModalCenterrrrrr"
+                    >
+                      Order
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -281,23 +281,23 @@
           </div>
           <div class="modal-body">
             <center>
-              <img
-                src="images/githeri.jpg"
-                height="150px"
-                alt=""
-              />
+              <img src="images/githeri.jpg" height="150px" alt="" />
             </center>
           </div>
-       
+
           <div class="modal-footer">
-            <button class="btn change-cart"><i class="fa fa-minus"></i></button>
-            <p>1</p>
-            <button class="btn change-cart mr-4">
+            <button class="btn change-cart" id="subtract">
+              <i class="fa fa-minus"></i>
+            </button>
+            <p id="quantity">1</p>
+            <button class="btn change-cart mr-4" id="add">
               <i class="fa fa-plus"></i>
             </button>
+            <p id="price">100</p>
             <button
+              data-dismiss="modal"
               type="button"
-              class="btn btn-primary align-right"
+              class="btn btn-success align-right githeri"
               id="orderbtn"
             >
               Add to cart
@@ -307,7 +307,7 @@
       </div>
     </div>
 
-     <!-- food 2 -->
+    <!-- food 2 -->
     <div
       class="modal fade"
       id="exampleModalCenterr"
@@ -332,14 +332,10 @@
             </button>
           </div>
           <div class="modal-body test">
-                <center>
-                  <img
-                    src="images/mokimo.jpg"
-                    height="150px"
-                    alt=""
-                  />
-                </center>
-              </div>
+            <center>
+              <img src="images/mokimo.jpg" height="150px" alt="" />
+            </center>
+          </div>
           <div class="modal-footer">
             <button class="btn change-cart"><i class="fa fa-minus"></i></button>
             <p>1</p>
@@ -347,8 +343,9 @@
               <i class="fa fa-plus"></i>
             </button>
             <button
+              data-dismiss="modal"
               type="button"
-              class="btn btn-primary align-right"
+              class="btn btn-success githe2 align-right"
               id="orderbtn"
             >
               Add to cart
@@ -358,210 +355,197 @@
       </div>
     </div>
 
-     <!-- food 3 -->
-     <div
-     class="modal fade"
-     id="exampleModalCenterrr"
-     tabindex="-1"
-     role="dialog"
-     aria-labelledby="exampleModalCenterTitleee"
-     aria-hidden="true"
-   >
-     <div class="modal-dialog modal-dialog-centered" role="document">
-       <div class="modal-content">
-         <div class="modal-header food-header">
-           <h5 class="modal-title " id="exampleModalCenterTitleee">
-          Chicken/Kuku
-           </h5>
-           <button
-             type="button"
-             class="close"
-             data-dismiss="modal"
-             aria-label="Close"
-           >
-             <span aria-hidden="true">&times;</span>
-           </button>
-         </div>
-         <div class="modal-body test">
-               <center>
-                 <img
-                   src="images/kuku2.jpeg"
-                   height="150px"
-                   alt=""
-                 />
-               </center>
-             </div>
-         <div class="modal-footer">
-           <button class="btn change-cart"><i class="fa fa-minus"></i></button>
-           <p>1</p>
-           <button class="btn change-cart mr-4">
-             <i class="fa fa-plus"></i>
-           </button>
-           <button
-             type="button"
-             class="btn btn-primary align-right"
-             id="orderbtn"
-           >
-             Add to cart
-           </button>
-         </div>
-       </div>
-     </div>
-   </div>
-
+    <!-- food 3 -->
+    <div
+      class="modal fade"
+      id="exampleModalCenterrr"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitleee"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header food-header">
+            <h5 class="modal-title " id="exampleModalCenterTitleee">
+              Chicken/Kuku
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body test">
+            <center>
+              <img src="images/kuku2.jpeg" height="150px" alt="" />
+            </center>
+          </div>
+          <div class="modal-footer">
+            <button class="btn change-cart"><i class="fa fa-minus"></i></button>
+            <p>1</p>
+            <button class="btn change-cart mr-4">
+              <i class="fa fa-plus"></i>
+            </button>
+            <button
+              type="button"
+              class="btn btn-success githe3 align-right"
+              id="orderbtn"
+              data-dismiss="modal"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- food 4 -->
     <div
-    class="modal fade"
-    id="exampleModalCenterrrr"
-    tabindex="-1"
-    role="dialog"
-    aria-labelledby="exampleModalCenterTitleeee"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header food-header">
-          <h5 class="modal-title " id="exampleModalCenterTitleeee">
-         Chips
-          </h5>
-          <button
-            type="button"
-            class="close"
-            data-dismiss="modal"
-            aria-label="Close"
-          >
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body test">
-              <center>
-                <img
-                  src="images/chipo.jpeg"
-                  height="150px"
-                  alt=""
-                />
-              </center>
-            </div>
-        <div class="modal-footer">
-          <button class="btn change-cart"><i class="fa fa-minus"></i></button>
-          <p>1</p>
-          <button class="btn change-cart mr-4">
-            <i class="fa fa-plus"></i>
-          </button>
-          <button
-            type="button"
-            class="btn btn-primary align-right"
-            id="orderbtn"
-          >
-            Add to cart
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-   <!-- food 4 -->
-   <div
-   class="modal fade"
-   id="exampleModalCenterrrrr"
-   tabindex="-1"
-   role="dialog"
-   aria-labelledby="exampleModalCenterTitleeee"
-   aria-hidden="true"
- >
-   <div class="modal-dialog modal-dialog-centered" role="document">
-     <div class="modal-content">
-       <div class="modal-header food-header">
-         <h5 class="modal-title " id="exampleModalCenterTitleeeee">
-        spaghetti
-         </h5>
-         <button
-           type="button"
-           class="close"
-           data-dismiss="modal"
-           aria-label="Close"
-         >
-           <span aria-hidden="true">&times;</span>
-         </button>
-       </div>
-       <div class="modal-body test">
-             <center>
-               <img
-                 src="images/spaghetti.jpeg"
-                 height="150px"
-                 alt=""
-               />
-             </center>
-           </div>
-       <div class="modal-footer">
-         <button class="btn change-cart"><i class="fa fa-minus"></i></button>
-         <p>1</p>
-         <button class="btn change-cart mr-4">
-           <i class="fa fa-plus"></i>
-         </button>
-         <button
-           type="button"
-           class="btn btn-primary align-right"
-           id="orderbtn"
-         >
-           Add to cart
-         </button>
-       </div>
-     </div>
-   </div>
- </div>
-
-  <!-- food 6 -->
-  <div
-  class="modal fade"
-  id="exampleModalCenterrrrrr"
-  tabindex="-1"
-  role="dialog"
-  aria-labelledby="exampleModalCenterTitleeeeee"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header food-header">
-        <h5 class="modal-title " id="exampleModalCenterTitleeeeee">
-       sausage
-        </h5>
-        <button
-          type="button"
-          class="close"
-          data-dismiss="modal"
-          aria-label="Close"
-        >
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body test">
+      class="modal fade"
+      id="exampleModalCenterrrr"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitleeee"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header food-header">
+            <h5 class="modal-title " id="exampleModalCenterTitleeee">
+              Chips
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body test">
             <center>
-              <img
-                src="images/sausage.jpeg"
-                height="150px"
-                alt=""
-              />
+              <img src="images/chipo.jpeg" height="150px" alt="" />
             </center>
           </div>
-      <div class="modal-footer">
-        <button class="btn change-cart"><i class="fa fa-minus"></i></button>
-        <p>1</p>
-        <button class="btn change-cart mr-4">
-          <i class="fa fa-plus"></i>
-        </button>
-        <button
-          type="button"
-          class="btn btn-primary align-right"
-          id="orderbtn"
-        >
-          Add to cart
-        </button>
+          <div class="modal-footer">
+            <button class="btn change-cart"><i class="fa fa-minus"></i></button>
+            <p>1</p>
+            <button class="btn change-cart mr-4">
+              <i class="fa fa-plus"></i>
+            </button>
+            <button
+              type="button"
+              class="btn btn-success githe4 align-right"
+              id="orderbtn"
+              data-dismiss="modal"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+
+    <!-- food 4 -->
+    <div
+      class="modal fade"
+      id="exampleModalCenterrrrr"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitleeee"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header food-header">
+            <h5 class="modal-title " id="exampleModalCenterTitleeeee">
+              spaghetti
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body test">
+            <center>
+              <img src="images/spaghetti.jpeg" height="150px" alt="" />
+            </center>
+          </div>
+          <div class="modal-footer">
+            <button class="btn change-cart"><i class="fa fa-minus"></i></button>
+            <p>1</p>
+            <button class="btn change-cart mr-4">
+              <i class="fa fa-plus"></i>
+            </button>
+            <button
+              type="button"
+              class="btn btn-success githe5 align-right"
+              id="orderbtn"
+              data-dismiss="modal"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- food 6 -->
+    <div
+      class="modal fade"
+      id="exampleModalCenterrrrrr"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitleeeeee"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header food-header">
+            <h5 class="modal-title " id="exampleModalCenterTitleeeeee">
+              sausage
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body test">
+            <center>
+              <img src="images/sausage.jpeg" height="150px" alt="" />
+            </center>
+          </div>
+          <div class="modal-footer">
+            <button class="btn change-cart"><i class="fa fa-minus"></i></button>
+            <p>1</p>
+            <button class="btn change-cart mr-4">
+              <i class="fa fa-plus"></i>
+            </button>
+            <button
+              type="button"
+              class="btn btn-success githe6 align-right"
+              id="orderbtn"
+              data-dismiss="modal"
+            >
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

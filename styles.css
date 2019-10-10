@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
   font-family: "Lato", sans-serif;
 }
-body{
+body {
   font-family: "Lato", sans-serif;
 }
 .logo img {
@@ -69,7 +69,7 @@ h3 {
   margin-left: 150px;
 }
 #orderbtn {
-  width: 40%;
+  width: 30%;
   margin-left: 70px;
 }
 .change-cart {
