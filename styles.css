@@ -7,6 +7,19 @@ body {
 body{
   font-family: "Lato", sans-serif;
 }
+.logo img {
+  height: 100px;
+  padding-top: 10px;
+}
+#navbarNav {
+  margin-left: 100px;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: rgba(0, 0, 0, 0.61);
+  font-size: 18px;
+  padding: 5px 25px 5px 25px;
+}
+
 
 ul {
   list-style-type: none;
@@ -46,12 +59,12 @@ nav {
 
 h3 {
   text-align: center;
+  margin-top:20px;
 }
-.btn {
-  width: 40%;
+ .btn {
   color:white;
-  background-color: green;
-}
+  background-color: green; 
+} 
 .food-header {
   margin-left: 150px;
 }
@@ -70,3 +83,4 @@ h3 {
 .modal-footer p {
   padding: 0 20px 0 20px;
 }
+
