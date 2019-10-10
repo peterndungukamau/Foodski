@@ -1,8 +1,41 @@
-//************* BUSINESS LOGIC AUTHENTICATION  *********//
+//************* BUSINESS LOGIC *********//
+function Food(food, quantity, price, totalPrice) {
+  this.food = food;
+  this.quantity = quantity;
+  this.price = price;
+  this.totalPrice = totalPrice;
+}
 
 //**************UI LOGIC *********//
 
 $("document").ready(function() {
+  //get quantity value
+  var quantity = parseInt($("#quantity").text());
+  //increment
+  $("#add").click(function() {
+    quantity += 1;
+    $("#quantity").text(quantity);
+    $("#price").text(quantity * 100);
+  });
+  //decrement
+  $("#subtract").click(function() {
+    quantity -= 1;
+    if (quantity < 1) {
+      return (quantity = 1);
+    }
+    $("#quantity").text(quantity);
+    $("#price").text(quantity * 100);
+  });
+  //Add to cart
+  $("#orderbtn, .githe1, .githe2, .githe3, .githe4, .githe5, .githe6").click(
+    function() {
+      window.location.href = "./orders.html?hidemyShoppingCart=1";
+    }
+  );
+  if (window.location.search.indexOf("hidemyShoppingCart=1") != -1) {
+    $(".myShoppingCart").hide();
+    $(".viewOrders").show();
+  }
   //signup
   $("#signup-form").submit(function(event) {
     event.preventDefault();

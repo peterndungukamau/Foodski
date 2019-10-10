@@ -99,7 +99,7 @@
   background-color: #f8f9fa !important;
   width: 100%;
   position: fixed;
-  z-index:999999;
+  z-index: 999999;
 }
 
 .btn-order {
@@ -130,27 +130,24 @@
   height: 600px;
 }
 
-
-.about h1{
+.about h1 {
   padding-top: 15%;
 }
 
-.testimonial h1{
+.testimonial h1 {
   padding-top: 15%;
   text-align: center;
 }
 
-
-.testimonial h4{
+.testimonial h4 {
   text-align: center;
 }
 
-
-.testimonial h6{
+.testimonial h6 {
   text-align: center;
 }
 
-.testimonial p{
+.testimonial p {
   text-align: center;
 }
 
@@ -158,11 +155,9 @@
   margin: 5%;
 }
 
-
 #log {
   padding-right: 20px;
 }
-
 
 #logout {
   display: none;
@@ -198,8 +193,9 @@ footer i {
   font-size: 30px;
 }
 
-.ml-auto, .mx-auto {
-  margin-left: 35%!important;
+.ml-auto,
+.mx-auto {
+  margin-left: 35% !important;
 }
 
 /* NB : To be included when we merge our work
@@ -212,3 +208,21 @@ footer i {
   
 }
 /* Homepage styles end */
+
+/* order section  */
+section h1 {
+  margin-top: 50px;
+}
+.viewOrders th {
+  padding-left: 80px;
+}
+.viewOrders {
+  padding-top: 30px;
+  display: none;
+}
+.myShoppingCart {
+  padding-top: 50px;
+}
+.myShoppingCart h4 {
+  padding-top: 35px;
+}
