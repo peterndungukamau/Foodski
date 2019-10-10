@@ -11,20 +11,26 @@ function Food(food, quantity, price, totalPrice) {
 $("document").ready(function() {
   //get quantity value
   var quantity = parseInt($("#quantity").text());
+  var quantity2 = parseInt($("#quantity2").text());
+  var quantity3 = parseInt($("#quantity3").text());
   //increment
-  $("#add").click(function() {
+  $("#add, #add2,add3").click(function() {
     quantity += 1;
-    $("#quantity").text(quantity);
+    $("#quantity, #quantity2 ,#quantity3").text(quantity);
     $("#price").text(quantity * 100);
+    $("#price2").text(quantity * 150);
+    $("#price3").text(quantity * 200);
   });
   //decrement
-  $("#subtract").click(function() {
+  $("#subtract, #subtract2 ,#subtract3").click(function() {
     quantity -= 1;
     if (quantity < 1) {
       return (quantity = 1);
     }
-    $("#quantity").text(quantity);
+    $("#quantity, #quantity2, #quantity3").text(quantity);
     $("#price").text(quantity * 100);
+    $("#price2").text(quantity * 150);
+    $("#price3").text(quantity * 200);
   });
   //Add to cart
   $("#orderbtn, .githe1, .githe2, .githe3, .githe4, .githe5, .githe6").click(
