@@ -19,6 +19,10 @@
       href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="icon" href="./images/logo.png" type="image/icon" />
     <link rel="stylesheet" href="styles.css" type="text/css" />
 
@@ -85,10 +89,13 @@
                 />
               </div>
               <div class="card-footer text-center">
-                <span class="item-name">caramel-micchiato iced cofee chocolate milkshake</span>
+                <span class="item-name"> Chocolate Milkshake</span>
                 <div class="item-details">
                   <p class="item-price">Kshs. 105.00</p>
-                  <div class="btn-success btn">Order</div>
+                  <div 
+                  data-toggle="modal"
+                        data-target="#milkshake"
+                  class="btn-success btn">Order</div>
                 </div>
               </div>
             </div>
@@ -107,7 +114,10 @@
                 <span class="item-name">crunchy bhajia with salad</span>
                 <div class="item-details">
                   <p class="item-price">Kshs. 75.00</p>
-                  <div class="btn-success btn">Order</div>
+                  <div 
+                  data-toggle="modal"
+                  data-target="#bhajia"
+                  class="btn-success btn">Order</div>
                 </div>
               </div>
             </div>
@@ -126,7 +136,10 @@
                 <span class="item-name">hot-dog- with ketchup and sauce</span>
                 <div class="item-details">
                   <p class="item-price">Kshs. 115.00</p>
-                  <div class="btn-success btn">Order</div>
+                  <div 
+                  data-toggle="modal"
+                  data-target="#hot-dog"
+                  class="btn-success btn">Order</div>
                 </div>
               </div>
             </div>
@@ -145,7 +158,10 @@
                 <span class="item-name">tasty kebab with fries and cold cod drink</span>
                 <div class="item-details">
                   <p class="item-price">Kshs. 265.00</p>
-                  <div class="btn-success btn">Order</div>
+                  <div 
+                  data-toggle="modal"
+                  data-target="#kebab"
+                  class="btn-success btn">Order</div>
                 </div>
               </div>
             </div>
@@ -165,7 +181,10 @@
                   <span class="item-name">fried-chips-masala</span>
                   <div class="item-details">
                     <p class="item-price">Kshs. 145.00</p>
-                    <div class="btn-success btn">Order</div>
+                    <div
+                    data-toggle="modal"
+                    data-target="#masala"
+                     class="btn-success btn">Order</div>
                   </div>
                 </div>
               </div>
@@ -184,7 +203,10 @@
                   <span class="item-name">recette hamburger and fries</span>
                   <div class="item-details">
                     <p class="item-price">Kshs. 300.00</p>
-                    <div class="btn-success btn">Order</div>
+                    <div 
+                    data-toggle="modal"
+                    data-target="#recette"
+                    class="btn-success btn">Order</div>
                   </div>
                 </div>
               </div>
@@ -203,7 +225,9 @@
                   <span class="item-name">french fries-ketchup and roast chicken </span>
                   <div class="item-details">
                     <p class="item-price">Kshs. 305.00</p>
-                    <div class="btn-success btn">Order</div>
+                    <div  data-toggle="modal"
+                    data-target="#chicken"
+                    class="btn-success btn">Order</div>
                   </div>
                 </div>
               </div>
@@ -222,7 +246,10 @@
                   <span class="item-name">plain-fries</span>
                   <div class="item-details">
                     <p class="item-price">Kshs. 105.00</p>
-                    <div class="btn">Order</div>
+                    <div
+                    data-toggle="modal"
+                    data-target="#plain-fries"
+                     class="btn">Order</div>
                   </div>
                 </div>
               </div>
@@ -231,6 +258,389 @@
         </div>
       </div>
     </div>
+
+    <!-- food 1 -->
+    <div
+    class="modal fade"
+    id="milkshake"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header food-header">
+          <h5 class="modal-title " id="exampleModalCenterTitle">
+            Chocolate Milkshake
+          </h5>
+          <button
+            type="button"
+            class="close"
+            data-dismiss="modal"
+            aria-label="Close"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <center>
+            <img
+              src="https://d1ralsognjng37.cloudfront.net/bdecf2d2-606f-47fe-8f91-98e942437683.jpeg"
+              height="150px"
+              alt=""
+            />
+          </center>
+        </div>
+        <div class="modal-footer">
+          <button class="btn change-cart"><i class="fa fa-minus"></i></button>
+          <p>1</p>
+          <button class="btn change-cart mr-4">
+            <i class="fa fa-plus"></i>
+          </button>
+          <button type="button" class="btn btn-primary align-right" id="orderbtn">
+            Add to cart
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- food 2 -->
+
+  <div
+  class="modal fade"
+  id="bhajia"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header food-header">
+        <h5 class="modal-title " id="exampleModalCenterTitle">
+          crunchy bhajia with salad
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img
+            src="https://thebritishtearoom.files.wordpress.com/2019/01/img_3611.jpg?w=750"
+            height="150px"
+            alt=""
+          />
+        </center>
+      </div>
+      <div class="modal-footer">
+        <button class="btn change-cart"><i class="fa fa-minus"></i></button>
+        <p>1</p>
+        <button class="btn change-cart mr-4">
+          <i class="fa fa-plus"></i>
+        </button>
+        <button type="button" class="btn btn-primary align-right" id="orderbtn">
+          Add to cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- food 3  -->
+
+<div
+  class="modal fade"
+  id="hot-dog"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header food-header">
+        <h5 class="modal-title " id="exampleModalCenterTitle">
+          hot-dog-with ketchup and sauce
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img
+            src="https://images7.alphacoders.com/816/816665.jpg"
+            height="150px"
+            alt=""
+          />
+        </center>
+      </div>
+      <div class="modal-footer">
+        <button class="btn change-cart"><i class="fa fa-minus"></i></button>
+        <p>1</p>
+        <button class="btn change-cart mr-4">
+          <i class="fa fa-plus"></i>
+        </button>
+        <button type="button" class="btn btn-primary align-right" id="orderbtn">
+          Add to cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- food 4 -->
+
+<div
+  class="modal fade"
+  id="kebab"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header food-header">
+        <h5 class="modal-title " id="exampleModalCenterTitle">
+          tasty kebab with fries and cold cod drink
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img
+            src="https://st2.depositphotos.com/1158226/11043/i/950/depositphotos_110439494-stock-photo-closeup-of-tasty-kebab-with.jpg""
+            height="150px"
+            alt=""
+          />
+        </center>
+      </div>
+      <div class="modal-footer">
+        <button class="btn change-cart"><i class="fa fa-minus"></i></button>
+        <p>1</p>
+        <button class="btn change-cart mr-4">
+          <i class="fa fa-plus"></i>
+        </button>
+        <button type="button" class="btn btn-primary align-right" id="orderbtn">
+          Add to cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- food 5 -->
+
+<div
+  class="modal fade"
+  id="masala"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header food-header">
+        <h5 class="modal-title " id="exampleModalCenterTitle">
+          fried-chips-masala
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img
+            src="http://mb.cafejavas.co.ug/wp-content/uploads/2017/04/masala-chips.jpg"
+            height="150px"
+            alt=""
+          />
+        </center>
+      </div>
+      <div class="modal-footer">
+        <button class="btn change-cart"><i class="fa fa-minus"></i></button>
+        <p>1</p>
+        <button class="btn change-cart mr-4">
+          <i class="fa fa-plus"></i>
+        </button>
+        <button type="button" class="btn btn-primary align-right" id="orderbtn">
+          Add to cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- food 6 -->
+
+<div
+  class="modal fade"
+  id="recette"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header food-header">
+        <h5 class="modal-title " id="exampleModalCenterTitle">
+          recette hamburger and fries
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img
+            src="https://static.cuisineaz.com/400x320/i99425-hamburger.jpg"
+            height="150px"
+            alt=""
+          />
+        </center>
+      </div>
+      <div class="modal-footer">
+        <button class="btn change-cart"><i class="fa fa-minus"></i></button>
+        <p>1</p>
+        <button class="btn change-cart mr-4">
+          <i class="fa fa-plus"></i>
+        </button>
+        <button type="button" class="btn btn-primary align-right" id="orderbtn">
+          Add to cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- food 7 -->
+
+<div
+  class="modal fade"
+  id="chicken"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header food-header">
+        <h5 class="modal-title " id="exampleModalCenterTitle">
+          french fries-ketchup and chicken
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img
+            src="https://www.adamsdiscount.co.za/wp-content/uploads/2018/08/fried-chips-1.jpg"
+            height="150px"
+            alt=""
+          />
+        </center>
+      </div>
+      <div class="modal-footer">
+        <button class="btn change-cart"><i class="fa fa-minus"></i></button>
+        <p>1</p>
+        <button class="btn change-cart mr-4">
+          <i class="fa fa-plus"></i>
+        </button>
+        <button type="button" class="btn btn-primary align-right" id="orderbtn">
+          Add to cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- food 8 -->
+
+<div
+  class="modal fade"
+  id="plain-fries"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalCenterTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header food-header">
+        <h5 class="modal-title " id="exampleModalCenterTitle">
+          plain-fries
+        </h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <center>
+          <img
+            src="https://www.adamsdiscount.co.za/wp-content/uploads/2018/08/fried-chips-1.jpg"
+            height="150px"
+            alt=""
+          />
+        </center>
+      </div>
+      <div class="modal-footer">
+        <button class="btn change-cart"><i class="fa fa-minus"></i></button>
+        <p>1</p>
+        <button class="btn change-cart mr-4">
+          <i class="fa fa-plus"></i>
+        </button>
+        <button type="button" class="btn btn-primary align-right" id="orderbtn">
+          Add to cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
