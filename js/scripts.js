@@ -23,11 +23,7 @@ $("document").ready(function() {
   var quantity4 = parseInt($("#quantity4").text());
 
   //increment
-<<<<<<< HEAD
-  $("#add, #add2,#add3,#add5,#add6,#add4").click(function() {
-=======
   $("#add").click(function() {
->>>>>>> 422cc42ce4dd0ba333d0cf993adb6793025b7462
     quantity += 1;
     $("#quantity").text(quantity);
     $("#finalOrder").text(quantity);
