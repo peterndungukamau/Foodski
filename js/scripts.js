@@ -9,6 +9,11 @@ function Food(food, quantity, price, totalPrice) {
 //**************UI LOGIC *********//
 
 $("document").ready(function() {
+  $("#location").click(function() {
+    var location = prompt("Enter you location");
+    $("#success").show();
+    $("#myLocation").text(location);
+  });
   //get quantity value
   var quantity = parseInt($("#quantity").text());
   var quantity2 = parseInt($("#quantity2").text());
@@ -21,6 +26,7 @@ $("document").ready(function() {
   $("#add").click(function() {
     quantity += 1;
     $("#quantity").text(quantity);
+    $("#finalOrder").text(quantity);
     $("#price").text(quantity * 65);
   });
   $("#add2").click(function() {
@@ -97,17 +103,81 @@ $("document").ready(function() {
     $("#quantity6").text(quantity6);
     $("#price6").text(quantity6 * 65);
   });
+  var foodOrder3 = new Food();
+  var foodOrder4 = new Food();
+  var foodOrder5 = new Food();
+  var foodOrder6 = new Food();
+  $("#orderbtn").click(function() {
+    //order 1
+    var food1 = $("#exampleModalCenterTitle").text();
+    var quantity1 = parseInt($("#finalOrder").text());
+    var price1 = parseInt($("#price").text());
+    ttl = quantity1 * price1;
+    var foodOrder1 = new Food(food1, quantity1, 65, price1);
+    $("#tablehead").show();
+    $(".myShoppingCart").hide();
+    $("table").append(
+      "<tr>" +
+        "<td>" +
+        foodOrder1.food +
+        "</td>" +
+        "<td>" +
+        foodOrder1.quantity +
+        "</td>" +
+        "<td>" +
+        foodOrder1.price +
+        "</td>" +
+        "<td>" +
+        foodOrder1.totalPrice +
+        "</td>" +
+        "</tr>"
+    );
+    $("td").css("padding-left", "20px");
+    $("th").css("padding-left", "20px");
+  });
+  $(".githe1").click(function() {
+    $(".myShoppingCart").hide();
+    $("table").append(
+      "<tr>" +
+        "<td>" +
+        foodOrder2.food +
+        "</td>" +
+        "<td>" +
+        foodOrder2.quantity +
+        "</td>" +
+        "<td>" +
+        foodOrder2.price +
+        "</td>" +
+        "<td>" +
+        foodOrder2.totalPrice +
+        "</td>" +
+        "</tr>"
+    );
+    $("td").css("padding-left", "20px");
+    $("th").css("padding-left", "20px");
+  });
+  $(".githe2").click(function() {
+    $(".myShoppingCart").hide();
+  });
 
-  //Add to cart
-  $("#orderbtn, .githe1, .githe2, .githe3, .githe4, .githe5, .githe6").click(
-    function() {
-      window.location.href = "./orders.html?hidemyShoppingCart=1";
-    }
-  );
+  $(".githe3").click(function() {
+    $(".myShoppingCart").hide();
+  });
+  $(".githe4").click(function() {
+    $(".myShoppingCart").hide();
+  });
+  $(".githe5").click(function() {
+    $(".myShoppingCart").hide();
+  });
+  $(".githe6").click(function() {
+    $(".myShoppingCart").hide();
+  });
+
   if (window.location.search.indexOf("hidemyShoppingCart=1") != -1) {
     $(".myShoppingCart").hide();
     $(".viewOrders").show();
   }
+
   //signup
   $("#signup-form").submit(function(event) {
     event.preventDefault();

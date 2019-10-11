@@ -25,6 +25,7 @@
     />
     <link rel="icon" href="./images/logo.png" type="image/icon" />
     <link rel="stylesheet" href="styles.css" type="text/css" />
+    
 
     <title>Foodski</title>
   </head>
@@ -55,24 +56,30 @@
             <li class="nav-item">
               <a class="nav-link" href="./hotelsPage.html">Kibandaski</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Orders</a>
-            </li>
+            <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
+              ORDERS  <span id="finalOrder">0</span>
+            </button>
+           
           </ul>
           <ul class="navbar-nav ml-auto">
-                <a href="#">
-                  <button
-                    class="btn btn-outline-success  my-2 my-sm-0 ml-4"
-                    type="submit"
-                    id="log"
-                  >
-                    Logout
-                  </button>
-                </a>
-              </ul>
+            <a href="./login.html">
+              <button
+                class="btn btn-outline-success  my-2 my-sm-0 ml-4"
+                type="submit"
+                id="log"
+              >
+                Logout
+              </button>
+            </a>
+          </ul>
         </div>
       </div>
     </nav>
+    <div class="container">
+    <div class="alert alert-success" id="success">
+        <strong>Success!</strong> Your food will be delivered at <span id="myLocation" style="font-size: 24px;"></span>. Enjoy your meal
+      </div>
+    </div>
     <h3>Chairman's menu</h3>
     <!-- <nav>
       <ul>
@@ -287,8 +294,9 @@
             <p id="price">65</p>
             <button
               type="button"
-              class="btn btn-primary align-right"
+              class="btn align-right"
               id="orderbtn"
+              data-dismiss="modal"
             >
               Add to cart
             </button>
@@ -339,11 +347,7 @@
               <i class="fa fa-plus"></i>
             </button>
             <p id="price2">65</p>
-            <button
-              type="button"
-              class="btn btn-primary align-right"
-              id="orderbtn"
-            >
+            <button type="button" class="btn align-right githe2" data-dismiss="modal">
               Add to cart
             </button>
           </div>
@@ -392,11 +396,7 @@
               <i class="fa fa-plus"></i>
             </button>
             <p id="price3">115</p>
-            <button
-              type="button"
-              class="btn btn-primary align-right"
-              id="orderbtn"
-            >
+            <button type="button" class="btn align-right githe3" data-dismiss="modal">
               Add to cart
             </button>
           </div>
@@ -447,8 +447,9 @@
             <p id="price4">125</p>
             <button
               type="button"
-              class="btn btn-primary align-right"
+              class="btn align-right githe4"
               id="orderbtn"
+              data-dismiss="modal"
             >
               Add to cart
             </button>
@@ -500,8 +501,9 @@
             <p id="price5">65</p>
             <button
               type="button"
-              class="btn btn-primary align-right"
+              class="btn align-right githe5"
               id="orderbtn"
+              data-dismiss="modal"
             >
               Add to cart
             </button>
@@ -553,8 +555,9 @@
             <p id="price6">65</p>
             <button
               type="button"
-              class="btn btn-primary align-right"
+              class="btn  align-right githe6"
               id="orderbtn"
+              data-dismiss="modal"
             >
               Add to cart
             </button>
@@ -562,6 +565,59 @@
         </div>
       </div>
     </div>
+
+   
+    <!-- cart modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title " style="margin-left: 250px;">View cart</h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <section>
+            
+            <center>
+              <div class="myShoppingCart">
+                <img src="./images/cart.svg" alt="" />
+                <h4>You have no food in your shopping cart</h4>
+              </div>
+            </center>
+            <div class="viewOrders">
+                <table>
+                  <tr id="tablehead">
+                    <th>Food</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total price</th>
+                  </tr>
+                  
+                </table>
+                <!-- <table>
+                  <div>
+                    <tr id="myFood" style="padding: 15px; margin-left: 100px;"></tr>
+                  </div>
+                </table> -->
+            </div>
+           
+          </section>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button id="location" type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
     <footer>
       <div class="container">
         <div class="row">
