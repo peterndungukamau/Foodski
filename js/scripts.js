@@ -10,7 +10,7 @@ function Food(food, quantity, price, totalPrice) {
 
 $("document").ready(function() {
   $("#location").click(function() {
-    var location = prompt("Enter you location");
+    var location = prompt("Enter your location");
     $("#success").show();
     $("#myLocation").text(location);
   });
