@@ -25,6 +25,7 @@
     />
     <link rel="icon" href="./images/logo.png" type="image/icon" />
     <link rel="stylesheet" href="styles.css" type="text/css" />
+    
 
     <title>Foodski</title>
   </head>
@@ -55,34 +56,30 @@
             <li class="nav-item">
               <a class="nav-link" href="./hotelsPage.html">Kibandaski</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Orders</a>
-            </li>
+            <button type="button" class="btn" data-toggle="modal" data-target="#myModal">
+              ORDERS  <span id="finalOrder">0</span>
+            </button>
+           
           </ul>
-          <!-- <ul class="navbar-nav ml-auto">
-                <a href="./login.html"
-                  ><button
-                    class="btn btn-outline-success my-2 my-sm-0"
-                    type="submit"
-                    id="log"
-                  >
-                    Login
-                  </button></a
-                >
-                <p></p>
-                <a href="./register.html">
-                  <button
-                    class="btn btn-outline-success  my-2 my-sm-0 ml-4"
-                    type="submit"
-                    id="log"
-                  >
-                    Register
-                  </button>
-                </a>
-              </ul> -->
+          <ul class="navbar-nav ml-auto">
+            <a href="./login.html">
+              <button
+                class="btn btn-outline-success  my-2 my-sm-0 ml-4"
+                type="submit"
+                id="log"
+              >
+                Logout
+              </button>
+            </a>
+          </ul>
         </div>
       </div>
     </nav>
+    <div class="container">
+    <div class="alert alert-success" id="success">
+        <strong>Success!</strong> Your food will be delivered at <span id="myLocation" style="font-size: 24px;"></span>. Enjoy your meal
+      </div>
+    </div>
     <h3>Chairman's menu</h3>
     <!-- <nav>
       <ul>
@@ -287,7 +284,9 @@
             </center>
           </div>
           <div class="modal-footer">
-            <button class="btn change-cart"><i class="fa fa-minus" id="subtract"></i></button>
+            <button class="btn change-cart" id="subtract">
+              <i class="fa fa-minus"></i>
+            </button>
             <p id="quantity">1</p>
             <button class="btn change-cart mr-4" id="add">
               <i class="fa fa-plus"></i>
@@ -295,8 +294,9 @@
             <p id="price">65</p>
             <button
               type="button"
-              class="btn btn-primary align-right"
+              class="btn align-right"
               id="orderbtn"
+              data-dismiss="modal"
             >
               Add to cart
             </button>
@@ -339,17 +339,15 @@
             </center>
           </div>
           <div class="modal-footer">
-            <button class="btn change-cart"><i class="fa fa-minus" id="subtract2"></i></button>
+            <button class="btn change-cart" id="subtract2">
+              <i class="fa fa-minus"></i>
+            </button>
             <p id="quantity2">1</p>
             <button class="btn change-cart mr-4" id="add2">
               <i class="fa fa-plus"></i>
             </button>
             <p id="price2">65</p>
-            <button
-              type="button"
-              class="btn btn-primary align-right"
-              id="orderbtn"
-            >
+            <button type="button" class="btn align-right githe2" data-dismiss="modal">
               Add to cart
             </button>
           </div>
@@ -390,16 +388,15 @@
             </center>
           </div>
           <div class="modal-footer">
-            <button class="btn change-cart"><i class="fa fa-minus" id="subtract3"></i></button>
+            <button class="btn change-cart" id="subtract3">
+              <i class="fa fa-minus"></i>
+            </button>
             <p id="quantity3">1</p>
-            <button class="btn change-cart mr-4"><i class="fa fa-plus" id="add3"></i> 
+            <button class="btn change-cart mr-4" id="add3">
+              <i class="fa fa-plus"></i>
             </button>
             <p id="price3">115</p>
-            <button
-              type="button"
-              class="btn btn-primary align-right"
-              id="orderbtn"
-            >
+            <button type="button" class="btn align-right githe3" data-dismiss="modal">
               Add to cart
             </button>
           </div>
@@ -440,7 +437,9 @@
             </center>
           </div>
           <div class="modal-footer">
-            <button class="btn change-cart"><i class="fa fa-minus" id="subtract4"></i></button>
+            <button class="btn change-cart" id="subtract4">
+              <i class="fa fa-minus"></i>
+            </button>
             <p id="quantity4">1</p>
             <button class="btn change-cart mr-4" id="add4">
               <i class="fa fa-plus"></i>
@@ -448,8 +447,9 @@
             <p id="price4">125</p>
             <button
               type="button"
-              class="btn btn-primary align-right"
+              class="btn align-right githe4"
               id="orderbtn"
+              data-dismiss="modal"
             >
               Add to cart
             </button>
@@ -491,7 +491,9 @@
             </center>
           </div>
           <div class="modal-footer">
-            <button class="btn change-cart"><i class="fa fa-minus" id="subtract5"></i></button>
+            <button class="btn change-cart" id="subtract5">
+              <i class="fa fa-minus"></i>
+            </button>
             <p id="quantity5">1</p>
             <button class="btn change-cart mr-4" id="add5">
               <i class="fa fa-plus"></i>
@@ -499,8 +501,9 @@
             <p id="price5">65</p>
             <button
               type="button"
-              class="btn btn-primary align-right"
+              class="btn align-right githe5"
               id="orderbtn"
+              data-dismiss="modal"
             >
               Add to cart
             </button>
@@ -542,16 +545,19 @@
             </center>
           </div>
           <div class="modal-footer">
-            <button class="btn change-cart"><i class="fa fa-minus" id="subtract6"></i></button>
+            <button class="btn change-cart" id="subtract6">
+              <i class="fa fa-minus"></i>
+            </button>
             <p id="quantity6">1</p>
             <button class="btn change-cart mr-4" id="add6">
               <i class="fa fa-plus"></i>
             </button>
-            <p id="price6">50</p>
+            <p id="price6">65</p>
             <button
               type="button"
-              class="btn btn-primary align-right"
+              class="btn  align-right githe6"
               id="orderbtn"
+              data-dismiss="modal"
             >
               Add to cart
             </button>
@@ -559,6 +565,59 @@
         </div>
       </div>
     </div>
+
+   
+    <!-- cart modal -->
+  <div class="modal fade" id="myModal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h2 class="modal-title " style="margin-left: 250px;">View cart</h2>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="modal-body">
+          <section>
+            
+            <center>
+              <div class="myShoppingCart">
+                <img src="./images/cart.svg" alt="" />
+                <h4>You have no food in your shopping cart</h4>
+              </div>
+            </center>
+            <div class="viewOrders">
+                <table>
+                  <tr id="tablehead">
+                    <th>Food</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total price</th>
+                  </tr>
+                  
+                </table>
+                <!-- <table>
+                  <div>
+                    <tr id="myFood" style="padding: 15px; margin-left: 100px;"></tr>
+                  </div>
+                </table> -->
+            </div>
+           
+          </section>
+        </div>
+        
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button id="location" type="button" class="btn btn-secondary" data-dismiss="modal">Checkout</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+</div>
     <footer>
       <div class="container">
         <div class="row">

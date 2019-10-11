@@ -1,3 +1,6 @@
+*{
+  overflow-x: hidden;
+}
 body {
   padding: 0;
   margin: 0;
@@ -19,7 +22,9 @@ body {
   font-size: 18px;
   padding: 5px 25px 5px 25px;
 }
-
+.navbar-light .navbar-nav .nav-link:hover {
+  border-bottom: solid 2px #3e9920;
+}
 
 ul {
   list-style-type: none;
@@ -59,12 +64,12 @@ nav {
 
 h3 {
   text-align: center;
-  margin-top:20px;
+  margin-top: 20px;
 }
- .btn {
-  color:white;
-  background-color: green; 
-} 
+.btn {
+  color: white;
+  background-color: green;
+}
 .food-header {
   margin-left: 150px;
 }
@@ -121,5 +126,9 @@ footer i {
   padding: 5px 25px 5px 25px;
   text-transform: uppercase;
 }
-
-
+tr {
+  padding: 12px 0 0 15px;
+}
+#success {
+  display: none;
+}
